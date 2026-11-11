@@ -11,7 +11,7 @@ https://submit.palomar-registry.org/.
 Write `[1, n] = {1, …, n}`. An exact `r`-colouring of `[1, n]` uses all `r` colours. A 3-term
 arithmetic progression (AP) is rainbow when its terms have three distinct colours; an `l`-term AP is
 monochromatic when its terms all have one colour; common differences are at least 1. Following
-Mao, Ozeki, Robertson and Wang (J. Combin. Theory Ser. A 193 (2023) 105672, Definition 1.15),
+Mao, Ozeki, Robertson and Wang (MORW; J. Combin. Theory Ser. A 193 (2023) 105672, Definition 1.15),
 `GW(r; 3, l)` is the least `m` such that for every `n ≥ m`, every exact `r`-colouring of `[1, n]`
 contains a rainbow 3-term AP or a monochromatic `l`-term AP.
 
@@ -97,6 +97,20 @@ No `sorry` outside `Challenge.lean`, no `native_decide`, no extra axioms:
 `lake env lean scripts/CheckAxioms.lean` prints `[propext, Classical.choice, Quot.sound]` for each
 compared theorem.
 
+## Why it is of interest
+
+Gallai–van der Waerden numbers were introduced by Mao, Ozeki, Robertson and Wang (2023) as the
+arithmetic analogue of Gallai–Ramsey numbers, and published exact values exist only for `l = 3` (Si, 2026).
+Theorem 1 turns any prime `p ≡ 1 (mod 8)` without `l` consecutive equal quadratic characters into an
+explicit lower bound for every number of colours `r = s + 2` with `2 ≤ s ≤ s(l)`, where `s(l)` is the
+largest number of colours of a rainbow-free colouring of `{0, …, l - 1}`. For `l = 4` the bound is
+sharp: `p = 17` gives `GW(r; 3, 4) ≥ 53` for `r = 4, 5`, and SAT certificates (Quantavane, not part of
+this submission) show `GW(4; 3, 4) = GW(5; 3, 4) = 53`. Primes found by a computer search (not
+formalised here) give, for example, `GW(r; 3, 6) ≥ 967` (`p = 193`) and `GW(r; 3, 7) ≥ 3,704`
+(`p = 617`) for `r = 4, 5`. The natural readers are researchers in Ramsey theory on the integers and
+arithmetic combinatorics: van der Waerden numbers, rainbow (anti-van der Waerden) problems and
+Gallai–Ramsey colourings.
+
 ## Provenance, literature and novelty
 
 The construction and Theorem 1 were found on 11 November 2026 in Quantavane's research work and are
@@ -121,9 +135,9 @@ claim no priority for those two numerical instances.
 Author and maintainer: Arhan Canli (Quantavane), who takes responsibility for the result.
 
 The construction, its informal proof and the Lean proof were produced by AI agents (Claude, by
-Anthropic) working for Quantavane under Arhan Canli's direction: one agent found the construction and
-wrote the informal proof, a second agent wrote the Lean proof (Lean v4.33.1), and the coordinating
-agent rebuilt that proof from scratch, printed the elaborated statement with `#check` to compare it
+Anthropic) working for Quantavane under Arhan Canli's direction: the coordinating agent found the
+construction and wrote the informal proof, a second agent wrote the Lean proof (Lean v4.33.1), and the
+coordinating agent rebuilt that proof from scratch, printed the elaborated statement with `#check` to compare it
 with the informal statement, and printed its axioms. A third agent ported it to Lean v4.35.0 and the
 module system for this repository. No mathematician outside Quantavane has reviewed the proof.
 
