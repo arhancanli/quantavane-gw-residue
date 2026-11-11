@@ -126,9 +126,7 @@ bounds, but no value for `l ≥ 4`; Y. Si (arXiv:2610.30711, October 2026) deter
 every `r`; MathWorld's Gallai–van der Waerden page (updated 11 November 2026) lists only `l = 3`. We
 found no earlier construction of this kind and no published value or bound of `GW(r; 3, l)` for
 `l ≥ 4`. The search was limited (these sources and two web searches), so novelty is our reading, not
-an established fact. Y. Si has told us of preliminary, unpublished computations of small values of
-`GW(r; 3, 4)` (private communication, November 2026), which agree with `gw_r4_l4` and `gw_r5_l4`; we
-claim no priority for those two numerical instances.
+an established fact.
 
 ## Authorship and the role of AI
 

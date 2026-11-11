@@ -90,10 +90,8 @@ sources:
     location: "https://arxiv.org/abs/2610.30711 (October 2026)"
     relationship: background
     note: >-
-      Determines GW(r; 3, 3) for every r; this formalization concerns l ≥ 4. Y. Si has also told
-      Quantavane of preliminary, unpublished computations of small values of GW(r; 3, 4) (private
-      communication, November 2026), which agree with gw_r4_l4 and gw_r5_l4; no priority is claimed
-      for those two numerical instances. Y. Si has not reviewed this repository.
+      Determines GW(r; 3, 3) for every r; this formalization concerns l ≥ 4. Y. Si has not reviewed
+      this repository.
     author_endorsement: other
 
 related_formalizations: []
