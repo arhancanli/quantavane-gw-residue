@@ -1,0 +1,8 @@
+/.lake/
+/.cache/
+.DS_Store
+# local agent tooling state (never part of the submission)
+.claude-flow/
+.swarm/
+ruvector.db
+agentdb*

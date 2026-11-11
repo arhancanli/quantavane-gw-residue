@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "GwResidue.theorem1",
+    "GwResidue.exists_goodExactColouring",
+    "GwResidue.lt_of_gwProperty",
+    "GwResidue.lt_GW",
+    "GwResidue.gw_r4_l4",
+    "GwResidue.gw_r5_l4"
+  ],
+  "definition_names": [],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": true
+}
