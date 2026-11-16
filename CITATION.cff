@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "Gallai-van der Waerden lower bounds from quadratic-residue colourings: Lean 4 proof"
+abstract: "Lean 4 proof of lower bounds for Gallai-van der Waerden numbers from quadratic-residue colourings."
+authors:
+  - family-names: Canli
+    given-names: Arhan
+    affiliation: Quantavane
+    email: arhan@quantavane.com
+license: Apache-2.0
+url: "https://quantavane.com"
+repository-code: "https://github.com/arhancanli/quantavane-gw-residue"
+keywords:
+  - Gallai-van der Waerden numbers
+  - quadratic residues
+  - Lean 4
